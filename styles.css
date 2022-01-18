@@ -1,0 +1,41 @@
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(black,#ad6db6,#ccc0cb,#9c748c,#2c1c66);
+}
+
+.heading{
+  font-size:10em;
+  color: white;
+}
+
+#container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+  font-size: 1em;
+  border-radius: 10px;
+  padding-right: 2em;
+  padding-left: 2em;
+  color: white;
+}
+.display{
+  border: 1px white solid;
+  border-radius: 10px;
+}
+.img{
+  max-width: 100%;
+  height: auto;
+}
+
+.fas:hover{
+  color: red;
+}
+
+#btn{
+  background:transparent ;
+  border: none;
+
+}
