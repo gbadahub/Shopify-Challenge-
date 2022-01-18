@@ -30,12 +30,14 @@ body{
   height: auto;
 }
 
+
 .fas:hover{
   color: red;
 }
 
-#btn{
+.btn{
   background:transparent ;
   border: none;
+  size: 2em;
 
 }

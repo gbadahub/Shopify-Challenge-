@@ -15,7 +15,7 @@ fetch('https://api.nasa.gov/planetary/apod?api_key=hE6ZrrTSo7i1KGhdStZWAfTXCa0Mc
     <img src=${hdurl} alt="Image from Nasa" class="img"/>
     <p>${title}</p>
     <p>${explanation}</p>
-    <button id=${date} onClick="changeColor(${date})" ><i  class="fas fa-heart"></i></button>
+    <button id=${date} class="btn" onClick="changeColor(this.id)" ><i  class="fas fa-heart"></i></button>
   </div>
 `
   });
@@ -27,4 +27,11 @@ fetch('https://api.nasa.gov/planetary/apod?api_key=hE6ZrrTSo7i1KGhdStZWAfTXCa0Mc
   console.log(err);
 })
 
-   
+function changeColor(colour) {
+  let heart = document.getElementById(colour)
+    if (heart.style.color == 'red'){
+      heart.style.color ='black'
+    } else{
+      heart.style.color ="red"
+    }
+}   
