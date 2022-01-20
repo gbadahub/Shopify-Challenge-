@@ -1,6 +1,6 @@
 
 
-fetch('https://api.nasa.gov/planetary/apod?api_key=hE6ZrrTSo7i1KGhdStZWAfTXCa0Mc8xb59BoiLXK&start_date=2022-01-01&end_date=2022-01-16')
+fetch('https://api.nasa.gov/planetary/apod?api_key=hE6ZrrTSo7i1KGhdStZWAfTXCa0Mc8xb59BoiLXK&start_date=2022-01-01&end_date=2022-01-18')
 .then((data) =>{ 
   return data.json()
 
